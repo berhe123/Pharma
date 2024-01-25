@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pharma.Code_UI.Report_Designers.rptSupplier">
+    <Position X="0.5" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>8yAAUAAAASACCJGAFAgAACBCIICgQIRAEAAIIAggAIA=</HashCode>
+      <FileName>Code_UI\Report Designers\rptSupplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

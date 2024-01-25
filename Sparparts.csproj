@@ -1,0 +1,1733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A32B17D4-297C-49A7-B421-9FAF1502C7DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pharma</RootNamespace>
+    <AssemblyName>Pharma</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>PharmaSys.ico</ApplicationIcon>
+    <PublishUrl>http://localhost/Pharma/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Design3, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.HtmlExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.PdfExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.RtfExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.TextExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.TiffExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Viewer3, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.XlsExport, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports3, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ARVSPackage, Version=5.2.0.397, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="cCalConv, Version=1.0.2539.37911, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Final EHPEA\EHPEA\bin\cCalConv.dll</HintPath>
+    </Reference>
+    <Reference Include="DataDynamics.ActiveReports.ToolBoxClassLib, Version=1.0.2578.21502, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\DataDynamics.ActiveReports.ToolBoxClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\System.Data.DataSetExtensions.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code_Business\Cash Collection\CCashCollectionInvoices.cs" />
+    <Compile Include="Code_Business\Common\CAppSettings.cs" />
+    <Compile Include="Code_Business\Common\CCommonListView.cs" />
+    <Compile Include="Code_Business\Common\CDateTime.cs" />
+    <Compile Include="Code_Business\Common\CDigits.cs" />
+    <Compile Include="Code_Business\Common\CImageAppSetting.cs" />
+    <Compile Include="Code_Business\Common\CImageSetting.cs" />
+    <Compile Include="Code_Business\Common\CPhoto.cs" />
+    <Compile Include="Code_Business\Common\CPictures.cs" />
+    <Compile Include="Code_Business\Common\CReports.cs" />
+    <Compile Include="Code_Business\Common\CSettings.cs" />
+    <Compile Include="Code_Business\Drug Registration\CDrugRegistrationFeePaymentRequestCertificates.cs" />
+    <Compile Include="Code_Business\Drug Registration\CDrugRegistrationFeePaymentRequests.cs" />
+    <Compile Include="Code_Business\Drug Registration\CDrugRegistrationFeeTableDetails.cs" />
+    <Compile Include="Code_Business\Drug Registration\CDrugRegistrationFeeTables.cs" />
+    <Compile Include="Code_Business\Drug Registration\CItems.cs" />
+    <Compile Include="Code_Business\Drug Registration\CLikeProducts.cs" />
+    <Compile Include="Code_Business\Drug Registration\CProductRegistrationCertificates.cs" />
+    <Compile Include="Code_Business\Import Management\CPriceAnalysis.cs" />
+    <Compile Include="Code_Business\Local Purchase\CLocalPurchaseOrderDetails.cs" />
+    <Compile Include="Code_Business\Local Purchase\CLocalPurchaseOrderPayments.cs" />
+    <Compile Include="Code_Business\Local Purchase\CLocalPurchaseOrders.cs" />
+    <Compile Include="Code_Business\Local Purchase\CLocalPurchaseOrderSettlements.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CBanks.cs" />
+    <Compile Include="Code_Business\Cash Collection\CCashCollections.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CCustomerTypes.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CDosageForms.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CDrugRegistrationTypes.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CDeliveryPersons.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CEngineType.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CItemCategories.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CMakeOrganizations.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CModel.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CYears.cs" />
+    <Compile Include="Code_Business\Sales Management\CInvoiceDetails.cs" />
+    <Compile Include="Code_Business\Sales Management\CInvoices.cs" />
+    <Compile Include="Code_Business\Sales Management\CProformaDetails.cs" />
+    <Compile Include="Code_Business\Sales Management\CProformas.cs" />
+    <Compile Include="Code_Business\Sales Management\CSalesReturnDetails.cs" />
+    <Compile Include="Code_Business\Sales Management\CSalesReturns.cs" />
+    <Compile Include="Code_Business\Sales Management\CSuppliesRequisitionDetails.cs" />
+    <Compile Include="Code_Business\Sales Management\CSuppliesRequisitions.cs" />
+    <Compile Include="Code_Business\Security\CApplicationUsers.cs" />
+    <Compile Include="Code_Business\Import Management\CBatchs.cs" />
+    <Compile Include="Code_Business\Common\CComboBoxItem.cs" />
+    <Compile Include="Code_Business\Common\CCommon.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CCountries.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CCustomers.cs" />
+    <Compile Include="Code_Business\Security\CEvents.cs" />
+    <Compile Include="Code_Business\Security\CGroups.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CLicenses.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CLocations.cs" />
+    <Compile Include="Code_Business\Security\CLogIn.cs" />
+    <Compile Include="Code_Business\Import Management\CManufacturerProformaDetails.cs" />
+    <Compile Include="Code_Business\Import Management\CManufacturerProformas.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CManufacturers.cs" />
+    <Compile Include="Code_Business\Drug Registration\CMarketStudies.cs" />
+    <Compile Include="Code_Business\Drug Registration\CProducts.cs" />
+    <Compile Include="Code_Business\Import Management\CPurchaseOrderBanks.cs" />
+    <Compile Include="Code_Business\Import Management\CPurchaseOrderDetails.cs" />
+    <Compile Include="Code_Business\Import Management\CPurchaseOrderInsurances.cs" />
+    <Compile Include="Code_Business\Import Management\CPurchaseOrderPayments.cs" />
+    <Compile Include="Code_Business\Import Management\CPurchaseOrders.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CStores.cs" />
+    <Compile Include="Code_Business\Security\CMergeDatabases.cs" />
+    <Compile Include="Code_Business\Security\CMerger.cs" />
+    <Compile Include="Code_Business\Store Management\CStoreTransactionDetails.cs" />
+    <Compile Include="Code_Business\Store Management\CStoreTransactions.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CTermsOfContractTemplates.cs" />
+    <Compile Include="Code_Business\Lookup Maintenance\CUnitOfMeasurements.cs" />
+    <Compile Include="Code_Business\Security\CUsers.cs" />
+    <Compile Include="Code_Business\Tender Management\CTenderCheckLists.cs" />
+    <Compile Include="Code_Business\Tender Management\CTenderCompetitorPrices.cs" />
+    <Compile Include="Code_Business\Tender Management\CTenderCompetitors.cs" />
+    <Compile Include="Code_Business\Tender Management\CTenderItems.cs" />
+    <Compile Include="Code_Business\Tender Management\CTenders.cs" />
+    <Compile Include="Code_UI\Controls\Date\Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Controls\Date\Date.Designer.cs">
+      <DependentUpon>Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Controls\Date\frmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Controls\Date\frmCalendar.Designer.cs">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Controls\frmControlTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Controls\frmControlTest.Designer.cs">
+      <DependentUpon>frmControlTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Controls\IndexBar\IndexBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Controls\IndexBar\IndexBar.Designer.cs">
+      <DependentUpon>IndexBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_Business\Common\PopupWindowHelper.cs" />
+    <Compile Include="Code_UI\Controls\SelectItem\SelectItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Controls\SelectItem\SelectItem.Designer.cs">
+      <DependentUpon>SelectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\rptPaymentRequest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\rptPaymentRequest.Designer.cs">
+      <DependentUpon>rptPaymentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmManufacturerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmManufacturerSelector.designer.cs">
+      <DependentUpon>frmManufacturerSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmReportViewerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmReportViewerInvoice.Designer.cs">
+      <DependentUpon>frmReportViewerInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectInvoice.Designer.cs">
+      <DependentUpon>frmSelectInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeeTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeeTables.Designer.cs">
+      <DependentUpon>frmDrugRegistrationFeeTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmImages.Designer.cs">
+      <DependentUpon>frmImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseSettlements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseSettlements.Designer.cs">
+      <DependentUpon>frmLocalPurchaseSettlements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrderVAT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrderVAT.Designer.cs">
+      <DependentUpon>rptLocalPurchaseOrderVAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalCalculatePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalCalculatePrice.Designer.cs">
+      <DependentUpon>frmLocalCalculatePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalProcessPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalProcessPurchaseOrder.Designer.cs">
+      <DependentUpon>frmLocalProcessPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseOrder.Designer.cs">
+      <DependentUpon>frmLocalPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalRegisterBatchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalRegisterBatchs.Designer.cs">
+      <DependentUpon>frmLocalRegisterBatchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrder.Designer.cs">
+      <DependentUpon>rptLocalPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmEngineTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmEngineTypes.Designer.cs">
+      <DependentUpon>frmEngineTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDeliveryPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDeliveryPersons.Designer.cs">
+      <DependentUpon>frmDeliveryPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmItemCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmItemCategories.designer.cs">
+      <DependentUpon>frmItemCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmMakeOrganizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmMakeOrganizations.Designer.cs">
+      <DependentUpon>frmMakeOrganizations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmModels.Designer.cs">
+      <DependentUpon>frmModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmYears.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmYears.Designer.cs">
+      <DependentUpon>frmYears.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptProforma.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptProforma.Designer.cs">
+      <DependentUpon>rptProforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmProforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmProforma.Designer.cs">
+      <DependentUpon>frmProforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceAttachment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceAttachment.designer.cs">
+      <DependentUpon>rptInvoiceAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptSalesReturn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptSalesReturn.Designer.cs">
+      <DependentUpon>rptSalesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmSalesReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmSalesReturn.Designer.cs">
+      <DependentUpon>frmSalesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmDamaged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmDamaged.Designer.cs">
+      <DependentUpon>frmDamaged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\frmMerger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\frmMerger.designer.cs">
+      <DependentUpon>frmMerger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmEvents.Designer.cs">
+      <DependentUpon>frmEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\CheckMaturityList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\CheckMaturityList.Designer.cs">
+      <DependentUpon>CheckMaturityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\NewActiveReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\NewActiveReport1.Designer.cs">
+      <DependentUpon>NewActiveReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptNotSettled.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptNotSettled.Designer.cs">
+      <DependentUpon>rptNotSettled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSetteled.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSetteled.Designer.cs">
+      <DependentUpon>rptSetteled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsStockValueList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsStockValueList.Designer.cs">
+      <DependentUpon>rptItemsStockValueList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoiceListByDeliveryPerson.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoiceListByDeliveryPerson.Designer.cs">
+      <DependentUpon>rptInvoiceListByDeliveryPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoicesByDeliveryPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoicesByDeliveryPerson.Designer.cs">
+      <DependentUpon>frmListOfInvoicesByDeliveryPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmBidBondsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmBidBondsReport.designer.cs">
+      <DependentUpon>frmBidBondsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmBidsListReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmBidsListReport.designer.cs">
+      <DependentUpon>frmBidsListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmPerformanceBondReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmPerformanceBondReport.designer.cs">
+      <DependentUpon>frmPerformanceBondReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmReceivingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmReceivingList.Designer.cs">
+      <DependentUpon>frmReceivingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptBidBondList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptBidBondList.designer.cs">
+      <DependentUpon>rptBidBondList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptPerformaceBondList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptPerformaceBondList.designer.cs">
+      <DependentUpon>rptPerformaceBondList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptReceivingList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptReceivingList.Designer.cs">
+      <DependentUpon>rptReceivingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmRegistrationFeeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmRegistrationFeeTable.Designer.cs">
+      <DependentUpon>frmRegistrationFeeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeeTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeeTable.Designer.cs">
+      <DependentUpon>rptDrugRegistrationFeeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeePaymentRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeePaymentRequests.Designer.cs">
+      <DependentUpon>frmDrugRegistrationFeePaymentRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeePaymentRequest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeePaymentRequest.Designer.cs">
+      <DependentUpon>rptDrugRegistrationFeePaymentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDosageForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDosageForms.Designer.cs">
+      <DependentUpon>frmDosageForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDrugRegistrationTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDrugRegistrationTypes.Designer.cs">
+      <DependentUpon>frmDrugRegistrationTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptCountries.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptCountries.Designer.cs">
+      <DependentUpon>rptCountries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptStores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptStores.Designer.cs">
+      <DependentUpon>rptStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptTermsOfContractTemplates.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptTermsOfContractTemplates.Designer.cs">
+      <DependentUpon>rptTermsOfContractTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomerTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomerTypes.Designer.cs">
+      <DependentUpon>frmCustomerTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptLookups.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptLookups.Designer.cs">
+      <DependentUpon>rptLookups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceFull.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceFull.Designer.cs">
+      <DependentUpon>rptInvoiceFull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmChangeSellableBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmChangeSellableBatch.Designer.cs">
+      <DependentUpon>frmChangeSellableBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\rptIssuance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\rptIssuance.Designer.cs">
+      <DependentUpon>rptIssuance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmPasswordChange.designer.cs">
+      <DependentUpon>frmPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSalesStatementByItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSalesStatementByItem.Designer.cs">
+      <DependentUpon>rptSalesStatementByItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByCustomerDetailed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByCustomerDetailed.Designer.cs">
+      <DependentUpon>rptInvoicesListByCustomerDetailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptStockCardWithInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptStockCardWithInvoice.Designer.cs">
+      <DependentUpon>rptStockCardWithInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfChecks.Designer.cs">
+      <DependentUpon>frmListOfChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptChecksList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptChecksList.Designer.cs">
+      <DependentUpon>rptChecksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfPaymentRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfPaymentRequests.Designer.cs">
+      <DependentUpon>frmListOfPaymentRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptPaymentRequestsList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptPaymentRequestsList.Designer.cs">
+      <DependentUpon>rptPaymentRequestsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoicesByItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoicesByItems.Designer.cs">
+      <DependentUpon>frmListOfInvoicesByItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByItem.Designer.cs">
+      <DependentUpon>rptInvoicesListByItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesListByCustomer.Designer.cs">
+      <DependentUpon>rptInvoicesListByCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfInvoices.Designer.cs">
+      <DependentUpon>frmListOfInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptInvoicesList.Designer.cs">
+      <DependentUpon>rptInvoicesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsBelowReorderLevel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsBelowReorderLevel.Designer.cs">
+      <DependentUpon>rptItemsBelowReorderLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsPriceList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsPriceList.Designer.cs">
+      <DependentUpon>rptItemsPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfItems.Designer.cs">
+      <DependentUpon>frmListOfItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptItemsList.Designer.cs">
+      <DependentUpon>rptItemsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomersProofReading1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomersProofReading1.Designer.cs">
+      <DependentUpon>rptCustomersProofReading1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmCustomersProofReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmCustomersProofReading.Designer.cs">
+      <DependentUpon>frmCustomersProofReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomersProofReading.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomersProofReading.Designer.cs">
+      <DependentUpon>rptCustomersProofReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptManufacturers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptManufacturers.Designer.cs">
+      <DependentUpon>rptManufacturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptCustomers.Designer.cs">
+      <DependentUpon>rptCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptRequisition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptRequisition.Designer.cs">
+      <DependentUpon>rptRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmListOfCustomers.Designer.cs">
+      <DependentUpon>frmListOfCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmStockCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmStockCard.Designer.cs">
+      <DependentUpon>frmStockCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSalesStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\frmSalesStatement.Designer.cs">
+      <DependentUpon>frmSalesStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptStockCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptStockCard.Designer.cs">
+      <DependentUpon>rptStockCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSupplier.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSupplier.Designer.cs">
+      <DependentUpon>rptSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptTenderList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptTenderList.designer.cs">
+      <DependentUpon>rptTenderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectSuppliesRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectSuppliesRequisition.Designer.cs">
+      <DependentUpon>frmSelectSuppliesRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectCustomer.Designer.cs">
+      <DependentUpon>frmSelectCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectPurchaseOrder.Designer.cs">
+      <DependentUpon>frmSelectPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelect.Designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectProducts.Designer.cs">
+      <DependentUpon>frmSelectProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmCalculatePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmCalculatePrice.Designer.cs">
+      <DependentUpon>frmCalculatePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmBanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmBanks.Designer.cs">
+      <DependentUpon>frmBanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmCustomerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmCustomerSelector.designer.cs">
+      <DependentUpon>frmCustomerSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmItems.Designer.cs">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\rptPurchaseOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\rptPurchaseOrder.Designer.cs">
+      <DependentUpon>rptPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\rptManufacturerProforma.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\rptManufacturerProforma.Designer.cs">
+      <DependentUpon>rptManufacturerProforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmStores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmStores.Designer.cs">
+      <DependentUpon>frmStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmTermsOfContractTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmTermsOfContractTemplates.Designer.cs">
+      <DependentUpon>frmTermsOfContractTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmUnitOfMeasurements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmUnitOfMeasurements.Designer.cs">
+      <DependentUpon>frmUnitOfMeasurements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmLocations.Designer.cs">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectCountry.Designer.cs">
+      <DependentUpon>frmSelectCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCountries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCountries.Designer.cs">
+      <DependentUpon>frmCountries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmCheckCashing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmCheckCashing.Designer.cs">
+      <DependentUpon>frmCheckCashing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentRequest.Designer.cs">
+      <DependentUpon>frmPaymentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentSettlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentSettlement.Designer.cs">
+      <DependentUpon>frmPaymentSettlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmRequesition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\frmRequesition.Designer.cs">
+      <DependentUpon>frmRequesition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSellableBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSellableBatch.Designer.cs">
+      <DependentUpon>frmSellableBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Sales Management\rptInvoice.Designer.cs">
+      <DependentUpon>rptInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSalesStatement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Report Designers\rptSalesStatement.Designer.cs">
+      <DependentUpon>rptSalesStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\rptReceiving.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\rptReceiving.Designer.cs">
+      <DependentUpon>rptReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmManufacturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmManufacturers.Designer.cs">
+      <DependentUpon>frmManufacturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmProcessPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmProcessPurchaseOrder.Designer.cs">
+      <DependentUpon>frmProcessPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Drug Registration\frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmRecall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmRecall.Designer.cs">
+      <DependentUpon>frmRecall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmRegisterBatchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Import Management\frmRegisterBatchs.Designer.cs">
+      <DependentUpon>frmRegisterBatchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturer.Designer.cs">
+      <DependentUpon>frmSelectManufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturerProforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturerProforma.Designer.cs">
+      <DependentUpon>frmSelectManufacturerProforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Code_UI\Controls\Date\Date.resx">
+      <DependentUpon>Date.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Controls\Date\frmCalendar.resx">
+      <DependentUpon>frmCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Controls\frmControlTest.resx">
+      <DependentUpon>frmControlTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Controls\IndexBar\IndexBar.resx">
+      <DependentUpon>IndexBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Controls\SelectItem\SelectItem.resx">
+      <DependentUpon>SelectItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Cash Collection\rptPaymentRequest.resx">
+      <DependentUpon>rptPaymentRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmManufacturerSelector.resx">
+      <DependentUpon>frmManufacturerSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmReportViewerInvoice.resx">
+      <DependentUpon>frmReportViewerInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectInvoice.resx">
+      <DependentUpon>frmSelectInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeeTables.resx">
+      <DependentUpon>frmDrugRegistrationFeeTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmImages.resx">
+      <DependentUpon>frmImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseSettlements.resx">
+      <DependentUpon>frmLocalPurchaseSettlements.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrderVAT.resx">
+      <DependentUpon>rptLocalPurchaseOrderVAT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalCalculatePrice.resx">
+      <DependentUpon>frmLocalCalculatePrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalProcessPurchaseOrder.resx">
+      <DependentUpon>frmLocalProcessPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalPurchaseOrder.resx">
+      <DependentUpon>frmLocalPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\frmLocalRegisterBatchs.resx">
+      <DependentUpon>frmLocalRegisterBatchs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Local Purchase\rptLocalPurchaseOrder.resx">
+      <DependentUpon>rptLocalPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmEngineTypes.resx">
+      <DependentUpon>frmEngineTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDeliveryPersons.resx">
+      <DependentUpon>frmDeliveryPersons.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmItemCategories.resx">
+      <DependentUpon>frmItemCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmMakeOrganizations.resx">
+      <DependentUpon>frmMakeOrganizations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmModels.resx">
+      <DependentUpon>frmModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmYears.resx">
+      <DependentUpon>frmYears.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptProforma.resx">
+      <DependentUpon>rptProforma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\frmProforma.resx">
+      <DependentUpon>frmProforma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceAttachment.resx">
+      <DependentUpon>rptInvoiceAttachment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptSalesReturn.resx">
+      <DependentUpon>rptSalesReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\frmSalesReturn.resx">
+      <DependentUpon>frmSalesReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\frmDamaged.resx">
+      <DependentUpon>frmDamaged.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\frmMerger.resx">
+      <DependentUpon>frmMerger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\Security\frmEvents.resx">
+      <DependentUpon>frmEvents.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\CheckMaturityList.resx">
+      <DependentUpon>CheckMaturityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\NewActiveReport1.resx">
+      <DependentUpon>NewActiveReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptNotSettled.resx">
+      <DependentUpon>rptNotSettled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptSetteled.resx">
+      <DependentUpon>rptSetteled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptItemsStockValueList.resx">
+      <DependentUpon>rptItemsStockValueList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptInvoiceListByDeliveryPerson.resx">
+      <DependentUpon>rptInvoiceListByDeliveryPerson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfInvoicesByDeliveryPerson.resx">
+      <DependentUpon>frmListOfInvoicesByDeliveryPerson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmBidBondsReport.resx">
+      <DependentUpon>frmBidBondsReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmBidsListReport.resx">
+      <DependentUpon>frmBidsListReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmPerformanceBondReport.resx">
+      <DependentUpon>frmPerformanceBondReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmReceivingList.resx">
+      <DependentUpon>frmReceivingList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptBidBondList.resx">
+      <DependentUpon>rptBidBondList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptPerformaceBondList.resx">
+      <DependentUpon>rptPerformaceBondList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptReceivingList.resx">
+      <DependentUpon>rptReceivingList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmRegistrationFeeTable.resx">
+      <DependentUpon>frmRegistrationFeeTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeeTable.resx">
+      <DependentUpon>rptDrugRegistrationFeeTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Drug Registration\frmDrugRegistrationFeePaymentRequests.resx">
+      <DependentUpon>frmDrugRegistrationFeePaymentRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Drug Registration\rptDrugRegistrationFeePaymentRequest.resx">
+      <DependentUpon>rptDrugRegistrationFeePaymentRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDosageForms.resx">
+      <DependentUpon>frmDosageForms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmDrugRegistrationTypes.resx">
+      <DependentUpon>frmDrugRegistrationTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptCountries.resx">
+      <DependentUpon>rptCountries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptStores.resx">
+      <DependentUpon>rptStores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptTermsOfContractTemplates.resx">
+      <DependentUpon>rptTermsOfContractTemplates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomerTypes.resx">
+      <DependentUpon>frmCustomerTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\rptLookups.resx">
+      <DependentUpon>rptLookups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptInvoiceFull.resx">
+      <DependentUpon>rptInvoiceFull.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\frmChangeSellableBatch.resx">
+      <DependentUpon>frmChangeSellableBatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\rptIssuance.resx">
+      <DependentUpon>rptIssuance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\Security\frmPasswordChange.resx">
+      <DependentUpon>frmPasswordChange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptSalesStatementByItem.resx">
+      <DependentUpon>rptSalesStatementByItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptInvoicesListByCustomerDetailed.resx">
+      <DependentUpon>rptInvoicesListByCustomerDetailed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptStockCardWithInvoice.resx">
+      <DependentUpon>rptStockCardWithInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfChecks.resx">
+      <DependentUpon>frmListOfChecks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptChecksList.resx">
+      <DependentUpon>rptChecksList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfPaymentRequests.resx">
+      <DependentUpon>frmListOfPaymentRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptPaymentRequestsList.resx">
+      <DependentUpon>rptPaymentRequestsList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfInvoicesByItems.resx">
+      <DependentUpon>frmListOfInvoicesByItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptInvoicesListByItem.resx">
+      <DependentUpon>rptInvoicesListByItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptInvoicesListByCustomer.resx">
+      <DependentUpon>rptInvoicesListByCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfInvoices.resx">
+      <DependentUpon>frmListOfInvoices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptInvoicesList.resx">
+      <DependentUpon>rptInvoicesList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptItemsBelowReorderLevel.resx">
+      <DependentUpon>rptItemsBelowReorderLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptItemsPriceList.resx">
+      <DependentUpon>rptItemsPriceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfItems.resx">
+      <DependentUpon>frmListOfItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptItemsList.resx">
+      <DependentUpon>rptItemsList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptCustomersProofReading1.resx">
+      <DependentUpon>rptCustomersProofReading1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmCustomersProofReading.resx">
+      <DependentUpon>frmCustomersProofReading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptCustomersProofReading.resx">
+      <DependentUpon>rptCustomersProofReading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptManufacturers.resx">
+      <DependentUpon>rptManufacturers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptCustomers.resx">
+      <DependentUpon>rptCustomers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptRequisition.resx">
+      <DependentUpon>rptRequisition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmListOfCustomers.resx">
+      <DependentUpon>frmListOfCustomers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmStockCard.resx">
+      <DependentUpon>frmStockCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\frmSalesStatement.resx">
+      <DependentUpon>frmSalesStatement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptStockCard.resx">
+      <DependentUpon>rptStockCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptSupplier.resx">
+      <DependentUpon>rptSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptTenderList.resx">
+      <DependentUpon>rptTenderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectSuppliesRequisition.resx">
+      <DependentUpon>frmSelectSuppliesRequisition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectCustomer.resx">
+      <DependentUpon>frmSelectCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectPurchaseOrder.resx">
+      <DependentUpon>frmSelectPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelect.resx">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectProducts.resx">
+      <DependentUpon>frmSelectProducts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\frmCalculatePrice.resx">
+      <DependentUpon>frmCalculatePrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmBanks.resx">
+      <DependentUpon>frmBanks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmCustomerSelector.resx">
+      <DependentUpon>frmCustomerSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmItems.resx">
+      <DependentUpon>frmItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\rptPurchaseOrder.resx">
+      <DependentUpon>rptPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\rptManufacturerProforma.resx">
+      <DependentUpon>rptManufacturerProforma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmStores.resx">
+      <DependentUpon>frmStores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmTermsOfContractTemplates.resx">
+      <DependentUpon>frmTermsOfContractTemplates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmUnitOfMeasurements.resx">
+      <DependentUpon>frmUnitOfMeasurements.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmLocations.resx">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectCountry.resx">
+      <DependentUpon>frmSelectCountry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmCountries.resx">
+      <DependentUpon>frmCountries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Cash Collection\frmCheckCashing.resx">
+      <DependentUpon>frmCheckCashing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentRequest.resx">
+      <DependentUpon>frmPaymentRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Cash Collection\frmPaymentSettlement.resx">
+      <DependentUpon>frmPaymentSettlement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\frmRequesition.resx">
+      <DependentUpon>frmRequesition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSellableBatch.resx">
+      <DependentUpon>frmSellableBatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Sales Management\rptInvoice.resx">
+      <DependentUpon>rptInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Report Designers\rptSalesStatement.resx">
+      <DependentUpon>rptSalesStatement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\rptReceiving.resx">
+      <DependentUpon>rptReceiving.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Lookup Maintenance\frmManufacturers.resx">
+      <DependentUpon>frmManufacturers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\frmProcessPurchaseOrder.resx">
+      <DependentUpon>frmProcessPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Drug Registration\frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\frmRecall.resx">
+      <DependentUpon>frmRecall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Import Management\frmRegisterBatchs.resx">
+      <DependentUpon>frmRegisterBatchs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturer.resx">
+      <DependentUpon>frmSelectManufacturer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Common\frmSelectManufacturerProforma.resx">
+      <DependentUpon>frmSelectManufacturerProforma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\frmIssuance.resx">
+      <DependentUpon>frmIssuance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\Security\frmDatabaseSettings.resx">
+      <DependentUpon>frmDatabaseSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\Security\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Data Entry Designers\Store Management\frmReceiving.resx">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code_UI\Main\Security\frmSecurityManager.resx">
+      <DependentUpon>frmSecurityManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmIssuance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmIssuance.Designer.cs">
+      <DependentUpon>frmIssuance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmDatabaseSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmDatabaseSettings.designer.cs">
+      <DependentUpon>frmDatabaseSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmLogIn.designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Data Entry Designers\Store Management\frmReceiving.Designer.cs">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmSecurityManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code_UI\Main\Security\frmSecurityManager.designer.cs">
+      <DependentUpon>frmSecurityManager.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datean1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datean11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datean111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datean12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nexts1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nexts11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prevs1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prevs11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search4people1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search4people11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showal1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showal11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinglePage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gracelogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gracelogo11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Popup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PopupClicked.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printabm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WebResqH.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supremelogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy of supremelogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supreme Logo About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supreme Logo About1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supremelogoA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy of supremelogoA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PharmaSys.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\pexels-photo-531880.jpeg" />
+    <Content Include="Resources\PharmaSys Spla.jpg" />
+    <None Include="Resources\Pic8 copy11.jpg" />
+    <None Include="Resources\PharmaSys Splash .png" />
+    <Content Include="Resources\spare part Sys.jpg" />
+    <None Include="Resources\SparepaLogoLast.png" />
+    <None Include="Resources\MINUS.BMP" />
+    <None Include="Resources\PLUS.BMP" />
+    <None Include="Resources\Undo.gif" />
+    <None Include="Resources\PharmaSys Splas.jpg" />
+    <None Include="Resources\Pic8 copy1.jpg" />
+    <None Include="Resources\W016.bmp" />
+    <None Include="Resources\WinXP33.bmp" />
+    <None Include="Resources\WinXP30.bmp" />
+    <None Include="Resources\WinXP22.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
